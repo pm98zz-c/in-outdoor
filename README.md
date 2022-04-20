@@ -3,6 +3,8 @@ A tiny shell script to switch the Gnome desktop environment from dark to light t
 
 It supports both standard GTK3 themes and the newer Gnome 42 global "dark mode", ensuring all application are toggled regardless of which one they use.
 
+By defaul, it also turns Night Light off for the "out" (light) mode and back on for "in" (dark) mode (see ![configuration](#configuration) to change that)
+
 Additionally, it can also toggle:
 - VS Code themes
 - Screen brightness
