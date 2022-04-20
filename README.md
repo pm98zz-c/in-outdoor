@@ -43,5 +43,6 @@ BRIGHTNESS_OUT="100%"
 
 ## Known issues / limitations
 
-This was created for my personal use, and tested only on Debian, it might not fit your use case or work on your setup. 
-Also keep in mind that the Gnome 42 dark mode is fairly new, and the transition might be a bit rocky before all apps are migrated.
+- This was created for my personal use, and tested only on Debian, it might not fit your use case or work on your setup. 
+- Keep in mind that the Gnome 42 dark mode is fairly new, and the transition might be a bit rocky before all apps are migrated.
+- Some non-native apps (Electron, Flakpak, etc) won't be toggled unless they are ported to the new Gnome 42 API.
