@@ -7,8 +7,10 @@ Additionally, it can also toggle:
 - VS Code themes
 - Screen brightness
 
+![in-out.gif](in-out.gif)
+
 ## Usage
-Simply call ./in-outdoor.sh to toggle between the two configurations. You can of course add an alias in your .bashrc/.zshrc (eg `alias in-out="/bin/sh /home/me/path/to/in-out/in-outdoor.sh"
+Simply call ./in-outdoor.sh to toggle between the two configurations. You can of course add an alias in your .bashrc/.zshrc (eg `alias in-out="/bin/sh /home/me/path/to/in-outdoor/in-outdoor.sh"
 `) or assign it a keyboard shortcut.
 
 ## Dependencies

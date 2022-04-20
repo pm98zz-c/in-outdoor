@@ -70,6 +70,6 @@ if [ -f "$VS_CODE_SETTINGS" ]; then
 fi
 
 ### Screen brightness
-if command -v brightnesscastl ; then
+if command -v brightnessctl ; then
   brightnessctl set "$BRIGHTNESS_SWITCH" > /dev/null
 fi
