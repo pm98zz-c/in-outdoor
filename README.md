@@ -19,13 +19,14 @@ The only hard dependency is Gnome's gsettings utility. To be able to set the scr
 ## Configuration
 You can customize a few things by creating a ~/.config/in-out.ini file.
 The default values for the available options are:
+
 ```
 # file ~/.config/in-out.ini
 
 ### Gnome 3+/Legacy GTK
 # To see which themes are available, use gnome-tweak-tool. You can get the currently active theme with `gsettings get org.gnome.desktop.interface gtk-theme`.
-GTK_IN_THEME="Adwaita-dark"
-GTK_OUT_THEME="HighContrast"
+GTK_IN_THEME="Adwaita-dark" # That would be "Yaru-dark" on Ubuntu
+GTK_OUT_THEME="Adwaita" # Yaru on Ubuntu
 
 ### Gnome 42+
 SHELL_IN_THEME="prefer-dark"
