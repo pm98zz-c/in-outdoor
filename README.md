@@ -1,5 +1,5 @@
 # in-outdoor
-A tiny shell script to switch the Gnome desktop environment from dark/to light theme. I'm using for when using my laptop from indoor to outdoor, but can be used for night/day times too.
+A tiny shell script to switch the Gnome desktop environment from dark to light theme. I'm using for when using it when moving my laptop from indoor to outdoor, but can be used for night/day times too.
 
 It supports both standard GTK3 themes and the newer Gnome 42 global "dark mode", ensuring all application are toggled regardless of which one they use.
 
