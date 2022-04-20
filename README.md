@@ -32,6 +32,10 @@ GTK_OUT_THEME="Adwaita" # Yaru on Ubuntu
 SHELL_IN_THEME="prefer-dark"
 SHELL_OUT_THEME="prefer-light"
 
+### Night Light @see https://help.gnome.org/users/gnome-help/stable/display-night-light.html
+NIGHT_LIGHT_IN="true"
+NIGHT_LIGHT_OUT="false"
+
 ### VSCode @see https://code.visualstudio.com/
 VS_CODE_IN_THEME="Default Dark+"
 VS_CODE_OUT_THEME="Default Light+"

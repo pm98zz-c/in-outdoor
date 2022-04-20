@@ -8,12 +8,16 @@ GTK_OUT_THEME="Adwaita"
 ### Gnome 42+
 SHELL_IN_THEME="prefer-dark"
 SHELL_OUT_THEME="prefer-light"
+### Night Light @see https://help.gnome.org/users/gnome-help/stable/display-night-light.html
+NIGHT_LIGHT_IN="true"
+NIGHT_LIGHT_OUT="false"
 ### VSCode @see https://code.visualstudio.com/
 VS_CODE_IN_THEME="Default Dark+"
 VS_CODE_OUT_THEME="Default Light+"
 ### Screen brightness @see https://github.com/Hummer12007/brightnessctl
 BRIGHTNESS_IN="85%"
 BRIGHTNESS_OUT="100%"
+
 
 ### Load configuration.
 if [ -z "$XDG_CONFIG_HOME" ]; then
@@ -30,11 +34,13 @@ GTK_SWITCH_THEME="$GTK_IN_THEME"
 SHELL_SWITCH_THEME="$SHELL_IN_THEME"
 BRIGHTNESS_SWITCH="$BRIGHTNESS_IN"
 SWITCH_IS="in"
+NIGHT_LIGHT_SWITCH="$NIGHT_LIGHT_IN"
 
 switch_out(){
   GTK_SWITCH_THEME="$GTK_OUT_THEME"
   SHELL_SWITCH_THEME="$SHELL_OUT_THEME"
   BRIGHTNESS_SWITCH="$BRIGHTNESS_OUT"
+  NIGHT_LIGHT_SWITCH="$NIGHT_LIGHT_OUT"
   SWITCH_IS="out"
 }
 
@@ -58,7 +64,8 @@ fi
 gsettings set org.gnome.desktop.interface gtk-theme "$GTK_SWITCH_THEME"
 gsettings set org.gnome.desktop.wm.preferences theme "$GTK_SWITCH_THEME"
 gsettings set org.gnome.desktop.interface color-scheme "$SHELL_SWITCH_THEME"
-
+# Night Light
+gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled "$NIGHT_LIGHT_SWITCH"
 ### Visual Studio Code.
 VS_CODE_SETTINGS="$XDG_CONFIG_HOME/Code/User/settings.json"
 if [ -f "$VS_CODE_SETTINGS" ]; then
