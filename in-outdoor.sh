@@ -1,6 +1,20 @@
 #!/bin/sh
 
-### Switch between outdoor and indoor settings.
+# in-outdoor.sh
+# Copyright (C) 2022  Pascal Morin
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ### Gnome 3+/Legacy GTK
 GTK_IN_THEME="Adwaita-dark"
@@ -17,7 +31,6 @@ VS_CODE_OUT_THEME="Default Light+"
 ### Screen brightness @see https://github.com/Hummer12007/brightnessctl
 BRIGHTNESS_IN="85%"
 BRIGHTNESS_OUT="100%"
-
 
 ### Load configuration.
 if [ -z "$XDG_CONFIG_HOME" ]; then
@@ -77,6 +90,6 @@ if [ -f "$VS_CODE_SETTINGS" ]; then
 fi
 
 ### Screen brightness
-if command -v brightnessctl ; then
+if command -v brightnessctl > /dev/null ; then
   brightnessctl set "$BRIGHTNESS_SWITCH" > /dev/null
 fi
