@@ -26,8 +26,8 @@ SHELL_OUT_THEME="prefer-light"
 NIGHT_LIGHT_IN="true"
 NIGHT_LIGHT_OUT="false"
 ### VSCode @see https://code.visualstudio.com/
-VS_CODE_IN_THEME="Default Dark+"
-VS_CODE_OUT_THEME="Default Light+"
+VS_CODE_IN_THEME="Default Dark Modern"
+VS_CODE_OUT_THEME="Default Light Modern"
 ### Screen brightness @see https://github.com/Hummer12007/brightnessctl
 BRIGHTNESS_IN="85%"
 BRIGHTNESS_OUT="100%"
